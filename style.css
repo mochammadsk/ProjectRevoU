@@ -1,0 +1,172 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(59, 71, 84);
+}
+
+header{
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 1.5em 5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid rgb(35, 35, 35, .2);
+}
+
+.logo{
+    height: 30px;
+    width: 90px;
+}
+
+.navbar button{
+    /* display: flex; */
+    border: 1px solid rgb(41,50,61,255);
+    border-collapse: collapse;
+    /* border-radius: 3px; */
+    background-color: transparent;
+    padding: 6px 20px;
+    font-size: 17px;
+}
+
+.home{
+    padding: 2em;
+    text-align: center;
+}
+
+.banner h1{
+    color: rgb(59, 71, 84);
+    font-size: 35px;
+}
+
+.banner p{
+    color: rgb(121, 141, 163);
+    font-size: 17px;
+}
+
+.content{
+    align-items: center;
+    text-align: center;
+}
+
+.photo{
+    width: 600px;
+    height: 370px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+}
+
+.account{
+    display: flex;
+    padding: 35px 135px;
+}
+
+.account-circle{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgba(237,240,244,255);
+    margin-top: 4px;
+}
+
+.account-name{
+    padding-left: 20px;
+    text-align: left;
+    line-height: .5;
+}
+
+.content-describe{
+    text-align: left;
+    line-height: 1.7;
+}
+
+.wrap{
+    display: flex;
+    padding-right: 150px;
+    padding-left: 150px;
+    justify-content: space-between;
+}
+
+.form{
+    background-color: rgba(237,240,244,255);
+    border-radius: 10px;
+    padding: 20px 50px;
+    width: 300px;
+    height: 550px;
+}
+
+.form h3{
+    font-size: 26px;
+    text-align: left;
+}
+
+.form h5{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form p{
+    text-align: left;
+    font-size: 15px;
+    color: rgb(121, 141, 163);
+}
+
+input{
+    /* padding: 15px 50px; */
+    width: 300px;
+    height: 45px;
+    border-color: rgb(121, 141, 163, .3);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+select{
+    width: 310px;
+    height: 50px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(121, 141, 163, .3);
+    color: rgb(121, 141, 163);
+    font-size: 14px;
+    text-align: left;
+}
+
+.button{
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    background-color: rgba(41,50,61,255);
+    width: 310px;
+    height: 45px;;
+}
+
+footer{
+    justify-content: center;
+    padding: 1em 2em;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid rgb(35, 35, 35, .2);
+}
+
+.logo-footer{
+    height: 16px;
+    width: 71px;
+}
+
+.footer-text{
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(121, 141, 163);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
