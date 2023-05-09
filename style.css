@@ -22,10 +22,8 @@ header{
 }
 
 .navbar button{
-    /* display: flex; */
     border: 1px solid rgb(41,50,61,255);
     border-collapse: collapse;
-    /* border-radius: 3px; */
     background-color: transparent;
     padding: 6px 20px;
     font-size: 17px;
@@ -60,7 +58,7 @@ header{
 
 .account{
     display: flex;
-    padding: 35px 135px;
+    padding: 35px 45px;
 }
 
 .account-circle{
@@ -69,12 +67,27 @@ header{
     border-radius: 50%;
     background-color: rgba(237,240,244,255);
     margin-top: 4px;
+    font-size: 40px;
 }
 
 .account-name{
     padding-left: 20px;
     text-align: left;
     line-height: .5;
+    padding-bottom: 50px;
+}
+
+.account-name i{
+    color: rgb(121, 141, 163);
+}
+
+hr{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(35, 35, 35, .07);
+    border: none;
+    border-radius: 3px;
+    margin-top: -40px;
 }
 
 .content-describe{
@@ -87,6 +100,12 @@ header{
     padding-right: 150px;
     padding-left: 150px;
     justify-content: space-between;
+}
+
+.photo-desc i{
+    font-size: 20px;
+    color: rgb(121, 141, 163);
+    margin-left: -100px;
 }
 
 .form{
@@ -145,7 +164,8 @@ select{
     border-style: none;
     background-color: rgba(41,50,61,255);
     width: 310px;
-    height: 45px;;
+    height: 45px;
+    cursor: pointer;
 }
 
 footer{
