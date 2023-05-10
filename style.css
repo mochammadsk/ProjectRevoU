@@ -108,20 +108,19 @@ hr{
     height: 50px;
     border-radius: 50%;
     background-color: rgba(237,240,244,255);
-    color: #a8b7c7;
+    color: rgb(121, 141, 163);
     margin-top: 10px;
     font-size: 24px;
     align-items: center;
     justify-content: center;
     display: flex;
     font-weight: bolder;
-
 }
 
 .desc-list{
     display: flex;
     text-align: left;
-    color: #a8b7c7;
+    color: rgb(121, 141, 163);
     padding-left: 15px;
     padding-bottom: 10px;
     font-size: 14px;
@@ -210,6 +209,76 @@ select{
     text-align: center;
     background-color: rgba(237,240,244,255);
     padding: 60px;
+}
+
+.package-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 140px;
+}
+  
+.package-box{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.box-warp{
+    display: flex;
+    width: 300px;
+    height: 150px;
+}
+
+.box-content{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.box-content h3{
+    line-height: 1;
+}
+
+.box-content p{
+    line-height: 1.3;
+    color: rgb(121, 141, 163);
+}
+
+.list-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(237,240,244,255);
+    color: #a8b7c7;
+    margin-top: 10px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.call-head{
+    border-top: 1.5px solid rgb(35, 35, 35, .2);
+    margin-top: -50px;
+    padding: 2em;
+}
+
+.call-content{
+    text-align: center;
+}
+
+.call-content h1{
+    font-size: 35px;
+}
+
+.call-content p{
+    color: rgb(121, 141, 163);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.call-button{
+    width: 310px;
+    height: 45px;
+    cursor: pointer;
 }
 
 footer{
