@@ -35,7 +35,6 @@ header{
 }
 
 .banner h1{
-    color: rgb(59, 71, 84);
     font-size: 35px;
 }
 
@@ -47,6 +46,7 @@ header{
 .content{
     align-items: center;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .photo{
@@ -71,7 +71,6 @@ header{
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 .account-name{
@@ -96,7 +95,37 @@ hr{
 
 .content-describe{
     text-align: left;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-list{
+    display: flex;
+}
+
+.list{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(237,240,244,255);
+    color: #a8b7c7;
+    margin-top: 10px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bolder;
+
+}
+
+.desc-list{
+    display: flex;
+    text-align: left;
+    color: #a8b7c7;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .wrap{
@@ -172,13 +201,22 @@ select{
     cursor: pointer;
 }
 
+.main-package{
+    padding-bottom: 50px;
+}
+
+.package{
+    font-size: 35px;
+    text-align: center;
+    background-color: rgba(237,240,244,255);
+    padding: 60px;
+}
+
 footer{
-    justify-content: center;
-    padding: 1em 2em;
+    padding: 2em;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-    align-items: center;
     border-top: 1px solid rgb(35, 35, 35, .2);
 }
 
