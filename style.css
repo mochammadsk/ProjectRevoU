@@ -285,8 +285,19 @@ select{
     line-height: 1.5;
 }
 
+.div-btn{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
 .call-button{
-    width: 310px;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    background-color: rgba(41,50,61,255);
+    width: 200px;
     height: 45px;
     cursor: pointer;
 }
