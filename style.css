@@ -68,6 +68,10 @@ header{
     background-color: rgba(237,240,244,255);
     margin-top: 4px;
     font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 
 .account-name{
