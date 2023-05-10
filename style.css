@@ -222,6 +222,16 @@ select{
     padding-bottom: 50px;
 }
 
+.package-line{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(35, 35, 35, .07);
+    border: none;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
 .box-warp{
     display: flex;
     width: 300px;
