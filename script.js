@@ -10,26 +10,26 @@ function validateForm(event) {
     var option = optionInput.value;
   
     if(name == ''){
-      alert('Nama harus diisi');
+      alert('Nama Tidak Boleh Kosong');
       return false;
     }
   
     if(email == ''){
-      alert('Email harus diisi');
+      alert('Email Tidak Boleh Kosong');
       return false;
     }
   
     if(!isValidEmail(email)){
-      alert('Email tidak valid');
+      alert('Email Tidak Valid');
       return false;
     }
 
-    if(option === 'Select option'){
-      alert('Anda belum memilih');
+    if(option == ''){
+      alert('Anda Belum Memilih');
       return false;
     }
     
-    alert('Form berhasil terkirim');
+    alert('Berhasil Terkirim');
 }
   
 function isValidEmail(email) {
