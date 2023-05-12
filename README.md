@@ -1,1 +1,1 @@
-This is my HTML and CSS web project in RevoU course
+This is my first web project in RevoU course.
