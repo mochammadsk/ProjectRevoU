@@ -7,7 +7,6 @@ body{
 }
 
 header{
-    /* display: flex; */
     justify-content: space-between;
     padding: 1.5em 5em;
     text-align: center;
@@ -16,21 +15,31 @@ header{
     border-bottom: 1.5px solid rgb(35, 35, 35, .2);
 }
 
-.logo{
+.logo img{
     height: 30px;
     width: 90px;
 }
 
-.navbar button{
+.navbar{
     border: 1px solid rgb(41,50,61,255);
+    padding: 6px 20px;
+    border-radius: 3px;
+    border-collapse: collapse;
+}
+
+.navbar button{
+    border: none;
     border-collapse: collapse;
     background-color: transparent;
-    padding: 6px 20px;
     font-size: 17px;
 }
 
-.home{
-    padding: 2em;
+.navbar button a{
+    font-style: none;
+}
+
+.banner{
+    padding: 25px;
     text-align: center;
 }
 
@@ -38,9 +47,9 @@ header{
     font-size: 35px;
 }
 
-.banner p{
+.banner h4{
     color: rgb(121, 141, 163);
-    font-size: 17px;
+    font-weight: unset;
 }
 
 .content{
@@ -153,9 +162,11 @@ hr{
     text-align: left;
 }
 
-.form h5{
+.form form label{
+    display: block;
+    justify-content: left;
+    align-items: start;
     text-align: left;
-    margin-bottom: 5px;
 }
 
 .form p{
@@ -165,7 +176,6 @@ hr{
 }
 
 input{
-    /* padding: 15px 50px; */
     width: 300px;
     height: 45px;
     border-color: rgb(121, 141, 163, .3);
@@ -179,7 +189,7 @@ input{
 
 select{
     width: 310px;
-    height: 50px;
+    height: 55px;
     border-radius: 5px;
     border-width: 3px;
     border-style: solid;

@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a304e4815d.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/a304e4815d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <link
+      rel="icon"
+      href="https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg"
+      type="image/x-icon"
+    />
     <title>Assigment RevoU 1</title>
   </head>
+
   <body>
     <header>
-      <div>
+      <div class="logo">
         <img
-          class="logo"
           src="https://images.moqups.com/repo/9PZZyyGjJ8/p_Tf3tCodSPL/_clipboard/f5dWWU7sxe.svg?Expires=1683783741&Key-Pair-Id=K1TPUF1X6HKIYU&Signature=R3EfE4cPVJNDQLZvZTmr60AQxFPEyfuk2YkHsfMo6Cizzq5XgLzAqIhnGiUNstNG9QB6OPd8eO6flOk0wDli3UYDF92S8Alg6M2N10YXqdx6YogdHGt4mjNlYL9zWBBcXjbcCwHJeVMMwZOFq-EiW7ks2e2-ACbgFlGXFlETlr320grM-HmRsvSgCnXM2J016DosdfPzi3J2HIuWffaV8SAJPDIP42K5eznf8V7v7ctSnZps9JewYcborUsP-lK82lZsyvoytgUCZ9q83MrcPBJQL6kzLw~FbcWd0Cp0pqCFVlxtDFGHTP8SNN8Uu6HPKBzDJhZHufR4CHG4uzfqww__"
-          alt="moqups"
+          alt="moqups logo"
         />
       </div>
       <div class="navbar">
@@ -26,15 +34,14 @@
     </header>
 
     <main>
-      <section class="home" id="home">
-        <div class="banner">
-          <h1>
-            Top Rated E-Groceries Shop in <br />
-            Indonesia
-          </h1>
-          <p>Every Day with best ingredients</p>
-        </div>
+      <section class="banner" id="home">
+        <h1>
+          Top Rated E-Groceries Shop in <br />
+          Indonesia
+        </h1>
+        <h4>Every Day with best ingredients</h4>
       </section>
+
       <section class="content">
         <div class="wrap">
           <div>
@@ -49,16 +56,17 @@
                 <i class="fa-regular fa-user" style="color: #a8b7c7"></i>
               </div>
               <div class="account-name">
-                <h4>
-                  Florence Hughes
-                </h4>
+                <h4>Florence Hughes</h4>
                 <i>Ibu Rumah Tangga, 28</i>
               </div>
             </div>
-            <hr>
+            <hr />
             <div class="content-describe">
               <h4>
-                Use this space to provide users with more information <br> about your offer. Consider it a follow-up to your headline <br> and explain the benefits of your servie or product
+                Use this space to provide users with more information <br />
+                about your offer. Consider it a follow-up to your headline
+                <br />
+                and explain the benefits of your servie or product
               </h4>
             </div>
             <div class="content-list">
@@ -66,8 +74,10 @@
                 <p>1</p>
               </div>
               <div class="desc-list">
-                <p>Your first feature, written in the form of a <br>
-                benefits statement.</p>
+                <p>
+                  Your first feature, written in the form of a <br />
+                  benefits statement.
+                </p>
               </div>
             </div>
             <div class="content-list">
@@ -75,7 +85,10 @@
                 <p>2</p>
               </div>
               <div class="desc-list">
-                <p>Your secound feature, written in the form <br> of a benefits statement.</p>
+                <p>
+                  Your secound feature, written in the form <br />
+                  of a benefits statement.
+                </p>
               </div>
             </div>
             <div class="content-list">
@@ -83,10 +96,14 @@
                 <p>3</p>
               </div>
               <div class="desc-list">
-                <p>Your third feature, written in the form of <br> a benefits statement.</p>
+                <p>
+                  Your third feature, written in the form of <br />
+                  a benefits statement.
+                </p>
               </div>
             </div>
           </div>
+
           <div>
             <div class="form">
               <h3>Contact Us</h3>
@@ -95,32 +112,49 @@
                 Jam setelah data kami terima.
               </p>
               <br /><br />
-              <form action="">
-                <h5>Your Name:</h5>
-                <input type="text" placeholder="First and last name" />
+              <form id="form" onsubmit="validateForm(event)">
+                <div>
+                  <label>Your Name:</label>
+                  <input
+                    placeholder="First and last name"
+                    type="text"
+                    id="name"
+                  />
+                </div>
                 <br />
-                <h5>Email Addres:</h5>
-                <input type="text" placeholder="example@email.com" />
+                <div>
+                  <label>Email Addres:</label>
+                  <input
+                    placeholder="example@email.com"
+                    type="email"
+                    id="email"
+                  />
+                </div>
                 <br />
-                <h5>What are you interested in?</h5>
-                <select placeholder="Select option">
-                  <option>Banana</option>
-                  <option>Aplle</option>
-                </select>
-              </form>
+                <div>
+                  <label>What are you interested in?</label>
+                  <select id="option">
+                    <option disabled selected value="">Select option</option>
+                    <option>Banana</option>
+                    <option>Aplle</option>
+                  </select>
+                </div>
                 <br /><br />
-                <button class="button"><strong>SEND</strong></button>
+                <div>
+                  <button class="button" type="submit">
+                    <strong>SEND</strong>
+                  </button>
+                </div>
               </form>
             </div>
             <br /><br />
           </div>
         </div>
       </section>
+
       <section class="main-package" id="package">
         <div class="package">
-          <h1>
-            Our Package
-          </h1>
+          <h1>Our Package</h1>
         </div>
         <div class="package-container">
           <div class="package-box">
@@ -129,11 +163,10 @@
                 <i class="fa-sharp fa-regular fa-lightbulb"></i>
               </div>
               <div class="box-content">
-                <h3>
-                  Fresh Vegetable
-                </h3>
+                <h3>Fresh Vegetable</h3>
                 <p>
-                  Sayuran segar langsung dari <br> sumber pertanian terbaik
+                  Sayuran segar langsung dari <br />
+                  sumber pertanian terbaik
                 </p>
               </div>
             </div>
@@ -144,11 +177,11 @@
                 <i class="fa-sharp fa-regular fa-lightbulb"></i>
               </div>
               <div class="box-content">
-                <h3>
-                  Fresh Fruit
-                </h3>
+                <h3>Fresh Fruit</h3>
                 <p>
-                  Buah dengan kualitas terbaik <br> dari local atau import dan <br> harga yang menarik
+                  Buah dengan kualitas terbaik <br />
+                  dari local atau import dan <br />
+                  harga yang menarik
                 </p>
               </div>
             </div>
@@ -159,17 +192,18 @@
                 <i class="fa-sharp fa-regular fa-lightbulb"></i>
               </div>
               <div class="box-content">
-                <h3>
-                  Instant Delivery
-                </h3>
+                <h3>Instant Delivery</h3>
                 <p>
-                  Di kirim instan oleh kurir <br> yang telah d training <br> dengan SOP untuk menjaga <br> kondisi belanja kamu 
+                  Di kirim instan oleh kurir <br />
+                  yang telah d training <br />
+                  dengan SOP untuk menjaga <br />
+                  kondisi belanja kamu
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <hr class="package-line">
+        <hr class="package-line" />
         <div class="package-container">
           <div class="package-box">
             <div class="box-warp">
@@ -177,11 +211,10 @@
                 <i class="fa-sharp fa-solid fa-star"></i>
               </div>
               <div class="box-content">
-                <h3>
-                  Kitchen Ingredient
-                </h3>
+                <h3>Kitchen Ingredient</h3>
                 <p>
-                  Bumbu dapur lengkap untuk <br> keperluan memasak kamu 
+                  Bumbu dapur lengkap untuk <br />
+                  keperluan memasak kamu
                 </p>
               </div>
             </div>
@@ -192,11 +225,10 @@
                 <i class="fa-sharp fa-solid fa-star"></i>
               </div>
               <div class="box-content">
-                <h3>
-                  Kitchen Set
-                </h3>
+                <h3>Kitchen Set</h3>
                 <p>
-                  Segala jenis alat masak untuk <br> membantu kamu memasak 
+                  Segala jenis alat masak untuk <br />
+                  membantu kamu memasak
                 </p>
               </div>
             </div>
@@ -207,11 +239,11 @@
                 <i class="fa-sharp fa-solid fa-star"></i>
               </div>
               <div class="box-content">
-                <h3>
-                  Bunding Set
-                </h3>
+                <h3>Bunding Set</h3>
                 <p>
-                  Bingung masak apa? sudah <br> tersedia paket untuk kamu <br> masak di dapur mu
+                  Bingung masak apa? sudah <br />
+                  tersedia paket untuk kamu <br />
+                  masak di dapur mu
                 </p>
               </div>
             </div>
@@ -220,17 +252,16 @@
       </section>
       <section class="call-head" id="call">
         <div class="call-content">
-          <h1>
-            Your Closing Argument Headline
-          </h1>
+          <h1>Your Closing Argument Headline</h1>
           <p>
-            Suspendise egestas rhoncus urna in bibendum. Donec urna neque, euismod sed <br> justo quis, convalis tincidunt risus. Phasellus fringilla odio vel erat fringilla.
+            Suspendise egestas rhoncus urna in bibendum. Donec urna neque,
+            euismod sed <br />
+            justo quis, convalis tincidunt risus. Phasellus fringilla odio vel
+            erat fringilla.
           </p>
         </div>
         <div class="div-btn">
-          <button class="call-button">
-            CALL TO ACTION
-          </button>
+          <button class="call-button">CALL TO ACTION</button>
         </div>
       </section>
     </main>
