@@ -61,12 +61,23 @@ function smoothScroll(event) {
   });
 }
 
-// function showNextImage() {
-//   var sliderImages = document.querySelectorAll(".slider img");
-//   var currentImageIndex = 0;
+var slideIndex = 0;
+var slides = document.querySelectorAll(".slider img");
 
-//   sliderImages[currentImageIndex].classList.remove("active");
-//   currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
-//   sliderImages[currentImageIndex].classList.add("active");
-// }
-// setInterval(showNextImage, 3000);
+function showSlide() {
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+
+  setTimeout(showSlide, 3000); // Mengatur interval waktu untuk perpindahan slide (dalam milidetik)
+}
+
+showSlide();
+// showSlide(); // Memulai slideshow saat halaman dimuat
